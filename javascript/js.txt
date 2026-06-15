@@ -1,0 +1,15 @@
+crud opeartions:
+DOM selection
+Events
+createElement()
+appendChild()
+remove()
+input handling
+class list
+validation
+
+Features:
+Add student
+display student cards dynamically
+delete students
+input validation
