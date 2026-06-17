@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+    name="viewport"
+    content=
+    "width=device-width, initial-scale=1.0">
+
+    <title>
+        Library Management
+    </title>
+
+    <link
+    rel="stylesheet"
+    href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            Library Management System
+        </h1>
+
+        <!-- FORM -->
+
+        <div class="form-container">
+
+            <input
+            type="text"
+            id="title"
+            placeholder="Book Title">
+
+            <input
+            type="text"
+            id="author"
+            placeholder="Author Name">
+
+            <input
+            type="text"
+            id="category"
+            placeholder="Category">
+
+            <input
+            type="number"
+            id="price"
+            placeholder="Price">
+
+            <input
+            type="number"
+            id="quantity"
+            placeholder="Quantity">
+
+            <button
+            onclick="addBook()"
+            id="addBtn">
+
+            Add Book
+
+            </button>
+
+        </div>
+
+        <!-- SEARCH BAR -->
+
+        <div class="search-container">
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by title, author, or category..."
+            onkeyup="filterBooks()">
+
+        </div>
+
+        <!-- TABLE -->
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="bookTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
